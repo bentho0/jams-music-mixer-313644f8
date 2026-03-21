@@ -107,4 +107,5 @@
 body {
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
+  font-family: 'Host Grotesk', sans-serif;
 }
