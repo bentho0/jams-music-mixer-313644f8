@@ -17,9 +17,9 @@ function BlockLines() {
       <div className="absolute inset-[-8.33%_0_0_0]">
         <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 84 13">
           <g>
-            <line stroke="#687382" strokeLinecap="round" x1="0.5" x2="83.5" y1="0.5" y2="0.5" />
-            <line stroke="#687382" strokeLinecap="round" x1="0.5" x2="83.5" y1="6.5" y2="6.5" />
-            <line stroke="#687382" strokeLinecap="round" x1="0.5" x2="83.5" y1="12.5" y2="12.5" />
+            <line stroke="#2A3432" strokeWidth="0.5" strokeLinecap="round" x1="0.5" x2="83.5" y1="0.5" y2="0.5" />
+            <line stroke="#2A3432" strokeWidth="0.5" strokeLinecap="round" x1="0.5" x2="83.5" y1="6.5" y2="6.5" />
+            <line stroke="#2A3432" strokeWidth="0.5" strokeLinecap="round" x1="0.5" x2="83.5" y1="12.5" y2="12.5" />
           </g>
         </svg>
       </div>
