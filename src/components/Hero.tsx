@@ -275,7 +275,7 @@ export function Hero({ onGeneratePlaylist }: HeroProps) {
               </button>
               <button
                 onClick={handleGeneratePlaylist}
-                className="bg-[#4feec5] hover:bg-[#3fd9b5] transition-all px-5 py-3 rounded-lg text-[#0a0b0d] text-[14px] shadow-[0_0_20px_rgba(79,238,197,0.3)] hover:shadow-[0_0_30px_rgba(79,238,197,0.5)]"
+                className="bg-[#4feec5] hover:bg-[#3fd9b5] transition-all px-5 py-3 rounded-lg text-[#0a0b0d] text-[14px] font-semibold shadow-[0_0_20px_rgba(79,238,197,0.3)] hover:shadow-[0_0_30px_rgba(79,238,197,0.5)]"
               >
                 Generate Playlist
               </button>
