@@ -30,7 +30,7 @@ function BlockLines() {
 function Block() {
   return (
     <div className="bg-[#3e454e] relative rounded-[6px] shrink-0 w-full block-item">
-      <div aria-hidden="true" className="absolute border-[#535c68] border-[0.5px] border-solid inset-[-0.25px] pointer-events-none rounded-[6.25px]" />
+      <div aria-hidden="true" className="absolute border-[#2A3432] border-[0.5px] border-solid inset-[-0.25px] pointer-events-none rounded-[6.25px]" />
       <div className="flex flex-row items-center size-full">
         <div className="content-stretch flex gap-[8px] items-center px-[6px] py-[4px] relative w-full">
           <div className="relative shrink-0 size-[20px]">
@@ -81,7 +81,7 @@ export function PlaylistGeneratingLoader({ isVisible }: PlaylistGeneratingLoader
                 </div>
               </div>
             </div>
-            <div aria-hidden="true" className="absolute border-[#535c68] border-[0.5px] border-solid inset-[-0.25px] pointer-events-none rounded-[12.25px]" />
+            <div aria-hidden="true" className="absolute border-[#2A3432] border-[0.5px] border-solid inset-[-0.25px] pointer-events-none rounded-[12.25px]" />
           </div>
 
           <div className="absolute h-[44px] left-[105px] top-[130px] w-[261px] pointer-events-none">
@@ -107,7 +107,7 @@ export function PlaylistGeneratingLoader({ isVisible }: PlaylistGeneratingLoader
             </p>
           </div>
         </div>
-        <div aria-hidden="true" className="absolute border-[#2c2c2c] border-[0.5px] border-solid inset-[-0.25px] pointer-events-none rounded-[12.25px]" />
+        <div aria-hidden="true" className="absolute border-[#2A3432] border-[0.5px] border-solid inset-[-0.25px] pointer-events-none rounded-[12.25px]" />
       </div>
 
       <style>{`
