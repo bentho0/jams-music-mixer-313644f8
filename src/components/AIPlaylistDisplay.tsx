@@ -498,7 +498,7 @@ export function AIPlaylistDisplay({
         {/* Playlist Header */}
         <div className="relative mb-12 mt-3">
           <div className={`absolute inset-0 bg-gradient-to-br ${getMoodGradient()} blur-3xl opacity-50 -z-10`} />
-          <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-5 md:p-10 border border-[#2A3432]">
+          <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-5 md:p-10 border-[0.5px] border-[#2A3432]">
             <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-start">
               {/* Playlist Cover */}
               <div
@@ -609,7 +609,7 @@ export function AIPlaylistDisplay({
 
                   <button
                     onClick={handleShareButton}
-                    className="flex items-center justify-center gap-2 px-5 rounded-lg bg-white/10 hover:bg-white/20 text-white font-semibold transition-all border border-[#2A3432] w-full md:w-auto" style={{height: '52px'}}
+                    className="flex items-center justify-center gap-2 px-5 rounded-lg bg-white/10 hover:bg-white/20 text-white font-semibold transition-all border-[0.5px] border-[#2A3432] w-full md:w-auto" style={{height: '52px'}}
                   >
                     <Share2 className="w-5 h-5" />
                     <span className="whitespace-nowrap">Share Playlist</span>
@@ -649,8 +649,8 @@ export function AIPlaylistDisplay({
         </div>
 
         {/* Track List */}
-        <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-[#2A3432] overflow-hidden">
-          <div className="px-4 md:px-6 py-4 border-b border-[#2A3432]">
+        <div className="bg-white/5 backdrop-blur-xl rounded-2xl border-[0.5px] border-[#2A3432] overflow-hidden">
+          <div className="px-4 md:px-6 py-4 border-b-[0.5px] border-[#2A3432]">
             <h2 className="text-white font-semibold text-lg">Tracks</h2>
           </div>
 
@@ -753,7 +753,7 @@ export function AIPlaylistDisplay({
                         setRefinementInput(item);
                         refinementInputRef.current?.focus();
                       }}
-                      className="px-2.5 py-1 rounded-full bg-white/10 hover:bg-white/20 text-white/60 hover:text-white text-xs transition-all border border-[#2A3432]"
+                      className="px-2.5 py-1 rounded-full bg-white/10 hover:bg-white/20 text-white/60 hover:text-white text-xs transition-all border-[0.5px] border-[#2A3432]"
                     >
                       "{item}"
                     </button>
@@ -826,8 +826,8 @@ export function AIPlaylistDisplay({
           onClick={(e) => { if (e.target === e.currentTarget) setIsEditModalOpen(false); }}
         >
           <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" />
-          <div className="relative w-full max-w-md bg-[#1a1b20] rounded-2xl shadow-2xl border border-[#2A3432] overflow-hidden">
-            <div className="flex items-center justify-between px-6 pt-6 pb-4 border-b border-[#2A3432]">
+          <div className="relative w-full max-w-md bg-[#1a1b20] rounded-2xl shadow-2xl border-[0.5px] border-[#2A3432] overflow-hidden">
+            <div className="flex items-center justify-between px-6 pt-6 pb-4 border-b-[0.5px] border-[#2A3432]">
               <h2 className="text-white font-bold text-lg">Edit playlist details</h2>
               <button onClick={() => setIsEditModalOpen(false)} className="text-white/40 hover:text-white transition-colors">
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -847,7 +847,7 @@ export function AIPlaylistDisplay({
                   maxLength={100}
                   autoFocus
                   placeholder="Give your playlist a name"
-                  className="w-full bg-white/5 border border-[#2A3432] rounded-lg px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#4feec5]/60 transition-all"
+                  className="w-full bg-white/5 border-[0.5px] border-[#2A3432] rounded-lg px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#4feec5]/60 transition-all"
                 />
               </div>
               <div>
@@ -860,7 +860,7 @@ export function AIPlaylistDisplay({
                   maxLength={300}
                   rows={4}
                   placeholder="Add an optional description"
-                  className="w-full bg-white/5 border border-[#2A3432] rounded-lg px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#4feec5]/60 transition-all resize-none"
+                  className="w-full bg-white/5 border-[0.5px] border-[#2A3432] rounded-lg px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-[#4feec5]/60 transition-all resize-none"
                 />
                 <p className="text-right text-white/20 text-xs mt-1">{editDescription.length}/300</p>
               </div>
@@ -891,8 +891,8 @@ export function AIPlaylistDisplay({
           onClick={(e) => { if (e.target === e.currentTarget) setShowExportModal(false); }}
         >
           <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" />
-          <div className="relative w-full max-w-md bg-[#1a1b20] rounded-2xl shadow-2xl border border-[#2A3432] overflow-hidden max-h-[90vh] flex flex-col">
-            <div className="flex items-center justify-between px-6 pt-6 pb-4 border-b border-[#2A3432] flex-shrink-0">
+          <div className="relative w-full max-w-md bg-[#1a1b20] rounded-2xl shadow-2xl border-[0.5px] border-[#2A3432] overflow-hidden max-h-[90vh] flex flex-col">
+            <div className="flex items-center justify-between px-6 pt-6 pb-4 border-b-[0.5px] border-[#2A3432] flex-shrink-0">
               <h2 className="text-white font-bold text-lg">Almost there — save your playlist</h2>
               <button onClick={() => setShowExportModal(false)} className="text-white/40 hover:text-white transition-colors">
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -968,13 +968,13 @@ export function AIPlaylistDisplay({
           >
             <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" onClick={closeShareModal} />
             <div
-              className="relative w-full max-w-[460px] bg-[#1a1b20] border border-[#2A3432] rounded-2xl shadow-2xl overflow-hidden"
+              className="relative w-full max-w-[460px] bg-[#1a1b20] border-[0.5px] border-[#2A3432] rounded-2xl shadow-2xl overflow-hidden"
               style={{
                 transform: shareModalVisible ? "scale(1) translateY(0)" : "scale(0.96) translateY(12px)",
                 transition: "transform 200ms ease",
               }}
             >
-              <div className="flex items-center justify-between px-6 pt-6 pb-4 border-b border-[#2A3432]">
+              <div className="flex items-center justify-between px-6 pt-6 pb-4 border-b-[0.5px] border-[#2A3432]">
                 <h2 className="text-white font-bold text-lg">Share this playlist</h2>
                 <button onClick={closeShareModal} className="text-white/40 hover:text-white transition-colors">
                   <X className="w-5 h-5" />
@@ -989,7 +989,7 @@ export function AIPlaylistDisplay({
                     value={shareText}
                     onChange={(e) => setShareText(e.target.value)}
                     rows={2}
-                    className="w-full bg-white/5 border border-[#2A3432] rounded-lg px-4 py-3 text-white/80 text-sm leading-relaxed focus:outline-none focus:border-[#4feec5]/50 transition-all resize-none"
+                    className="w-full bg-white/5 border-[0.5px] border-[#2A3432] rounded-lg px-4 py-3 text-white/80 text-sm leading-relaxed focus:outline-none focus:border-[#4feec5]/50 transition-all resize-none"
                   />
                 </div>
                 <div className="grid grid-cols-3 sm:grid-cols-5 gap-2">
@@ -1005,7 +1005,7 @@ export function AIPlaylistDisplay({
                       href={platforms[key as keyof typeof platforms]}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex flex-col items-center gap-1.5 px-2 py-3 rounded-xl bg-white/5 hover:bg-white/10 text-white transition-all border border-[#2A3432] hover:border-[#2A3432]"
+                      className="flex flex-col items-center gap-1.5 px-2 py-3 rounded-xl bg-white/5 hover:bg-white/10 text-white transition-all border-[0.5px] border-[#2A3432] hover:border-[#2A3432]"
                     >
                       {icon}
                       <span className="text-[10px] text-white/50">{label}</span>
@@ -1014,7 +1014,7 @@ export function AIPlaylistDisplay({
                 </div>
                 <button
                   onClick={handleCopyLink}
-                  className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-[#2A3432] hover:border-[#2A3432] text-white/80 text-sm font-medium transition-all"
+                  className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-white/5 hover:bg-white/10 border-[0.5px] border-[#2A3432] hover:border-[#2A3432] text-white/80 text-sm font-medium transition-all"
                 >
                   {copyLinkText === "✓ Link Copied!" ? <Check className="w-4 h-4 text-[#4feec5]" /> : <Copy className="w-4 h-4" />}
                   <span className={copyLinkText === "✓ Link Copied!" ? "text-[#4feec5]" : ""}>{copyLinkText}</span>
@@ -1037,7 +1037,7 @@ export function AIPlaylistDisplay({
           transition: "all 200ms ease",
         }}
       >
-        <div className="flex items-center gap-2 px-4 py-2.5 bg-[#1a1b20] border border-[#2A3432] rounded-xl shadow-xl text-white text-sm font-medium whitespace-nowrap">
+        <div className="flex items-center gap-2 px-4 py-2.5 bg-[#1a1b20] border-[0.5px] border-[#2A3432] rounded-xl shadow-xl text-white text-sm font-medium whitespace-nowrap">
           <Check className="w-4 h-4 text-[#4feec5]" />
           ✓ Link copied to clipboard
         </div>
@@ -1053,7 +1053,7 @@ export function AIPlaylistDisplay({
           }}
         >
           <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" onClick={() => dismissToast("fade")} />
-          <div className="relative w-full max-w-[420px] bg-[#1a1b20] border border-[#2A3432] rounded-2xl shadow-2xl overflow-hidden"
+          <div className="relative w-full max-w-[420px] bg-[#1a1b20] border-[0.5px] border-[#2A3432] rounded-2xl shadow-2xl overflow-hidden"
             style={{
               transform: toastVisible ? "scale(1) translateY(0)" : "scale(0.96) translateY(12px)",
               transition: "transform 200ms ease",
@@ -1072,7 +1072,7 @@ export function AIPlaylistDisplay({
                     <Check className="w-4 h-4" />
                     Yes, it worked
                   </button>
-                  <button onClick={handleToastHelp} className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border border-[#2A3432] text-white/70 hover:text-white hover:border-[#2A3432] text-sm font-medium transition-all">
+                  <button onClick={handleToastHelp} className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border-[0.5px] border-[#2A3432] text-white/70 hover:text-white hover:border-[#2A3432] text-sm font-medium transition-all">
                     <X className="w-4 h-4" />
                     I had trouble
                   </button>
@@ -1093,7 +1093,7 @@ export function AIPlaylistDisplay({
                     <RotateCcw className="w-4 h-4 shrink-0" />
                     Generate New Playlist
                   </button>
-                  <button onClick={() => { dismissToast("fade"); onEditPrompt(); }} className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border border-[#2A3432] text-white/70 hover:text-white hover:border-[#2A3432] text-sm font-medium transition-all">
+                  <button onClick={() => { dismissToast("fade"); onEditPrompt(); }} className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border-[0.5px] border-[#2A3432] text-white/70 hover:text-white hover:border-[#2A3432] text-sm font-medium transition-all">
                     <Edit2 className="w-4 h-4" />
                     Tweak This One
                   </button>
@@ -1126,7 +1126,7 @@ export function AIPlaylistDisplay({
                     <ExternalLink className="w-4 h-4" />
                     Re-open Tunemymusic
                   </button>
-                  <button onClick={handleToastCopyAgain} className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border border-[#2A3432] text-white/70 hover:text-white hover:border-[#2A3432] text-sm font-medium transition-all">
+                  <button onClick={handleToastCopyAgain} className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border-[0.5px] border-[#2A3432] text-white/70 hover:text-white hover:border-[#2A3432] text-sm font-medium transition-all">
                     {toastCopyText === "✓ Copied!" ? <Check className="w-4 h-4 text-[#4feec5]" /> : <Copy className="w-4 h-4" />}
                     <span className={toastCopyText === "✓ Copied!" ? "text-[#4feec5]" : ""}>{toastCopyText}</span>
                   </button>

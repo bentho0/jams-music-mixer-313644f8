@@ -255,7 +255,7 @@ export function MainApp() {
   return (
     <div className="min-h-screen bg-[#0a0b0d]">
       {isFigmaSandboxNow && !sandboxBannerDismissed && (
-        <div className="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between gap-3 px-4 py-2.5 bg-yellow-500/10 border-b border-[#2A3432] backdrop-blur-sm">
+        <div className="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between gap-3 px-4 py-2.5 bg-yellow-500/10 border-b-[0.5px] border-[#2A3432] backdrop-blur-sm">
           <div className="flex items-center gap-2.5 min-w-0">
             <svg className="w-4 h-4 text-yellow-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3m0 3h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
@@ -295,9 +295,9 @@ export function MainApp() {
         return (
           <div className="fixed inset-0 bg-[#0a0b0d]/95 z-50 flex flex-col items-center justify-center gap-6 px-5">
             <div className={`w-14 h-14 rounded-full flex items-center justify-center mb-2 ${
-              isNetworkError ? "bg-yellow-500/10 border border-[#2A3432]" :
-              isTimeout ? "bg-orange-500/10 border border-[#2A3432]" :
-              "bg-red-500/10 border border-[#2A3432]"
+              isNetworkError ? "bg-yellow-500/10 border-[0.5px] border-[#2A3432]" :
+              isTimeout ? "bg-orange-500/10 border-[0.5px] border-[#2A3432]" :
+              "bg-red-500/10 border-[0.5px] border-[#2A3432]"
             }`}>
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke={isNetworkError ? "#eab308" : isTimeout ? "#f97316" : "#ef4444"} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>

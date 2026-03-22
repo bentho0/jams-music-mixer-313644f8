@@ -233,7 +233,7 @@ export function SharedPlaylistPage() {
 
   return (
     <div className="min-h-screen bg-[#0a0b0d]">
-      <header className="border-b border-[#2A3432] px-6 py-4">
+      <header className="border-b-[0.5px] border-[#2A3432] px-6 py-4">
         <div className="max-w-3xl mx-auto flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2.5 text-white hover:text-[#4feec5] transition-colors">
             <div className="w-7 h-7 rounded-lg bg-[#4feec5] flex items-center justify-center">
@@ -249,7 +249,7 @@ export function SharedPlaylistPage() {
       </header>
 
       <div className="max-w-3xl mx-auto px-6 py-10">
-        <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-[#2A3432] mb-8">
+        <div className="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border-[0.5px] border-[#2A3432] mb-8">
           <div className="flex flex-col sm:flex-row gap-7 items-start">
             {renderCover("w-40 h-40")}
             <div className="flex-1 min-w-0">
@@ -272,7 +272,7 @@ export function SharedPlaylistPage() {
                 </button>
                 <button
                   onClick={handleShareButton}
-                  className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white/10 hover:bg-white/20 text-white font-semibold text-sm transition-all border border-[#2A3432]"
+                  className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white/10 hover:bg-white/20 text-white font-semibold text-sm transition-all border-[0.5px] border-[#2A3432]"
                 >
                   <Share2 className="w-4 h-4" />
                   Share Playlist
@@ -282,8 +282,8 @@ export function SharedPlaylistPage() {
           </div>
         </div>
 
-        <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-[#2A3432] overflow-hidden mb-8">
-          <div className="px-6 py-4 border-b border-[#2A3432]">
+        <div className="bg-white/5 backdrop-blur-xl rounded-2xl border-[0.5px] border-[#2A3432] overflow-hidden mb-8">
+          <div className="px-6 py-4 border-b-[0.5px] border-[#2A3432]">
             <h2 className="text-white font-semibold">Tracks</h2>
           </div>
           <div className="divide-y divide-[#2A3432]">
@@ -311,7 +311,7 @@ export function SharedPlaylistPage() {
           </div>
         </div>
 
-        <div className="border-t border-[#2A3432] pt-10 text-center">
+        <div className="border-t-[0.5px] border-[#2A3432] pt-10 text-center">
           <div className="w-12 h-12 rounded-2xl bg-[#4feec5]/10 flex items-center justify-center mx-auto mb-4">
             <Music className="w-6 h-6 text-[#4feec5]" />
           </div>
@@ -334,13 +334,13 @@ export function SharedPlaylistPage() {
         >
           <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" onClick={closeShareModal} />
           <div
-            className="relative w-full max-w-[460px] bg-[#1a1b20] border border-[#2A3432] rounded-2xl shadow-2xl overflow-hidden"
+            className="relative w-full max-w-[460px] bg-[#1a1b20] border-[0.5px] border-[#2A3432] rounded-2xl shadow-2xl overflow-hidden"
             style={{
               transform: shareModalVisible ? "scale(1) translateY(0)" : "scale(0.96) translateY(12px)",
               transition: "transform 200ms ease",
             }}
           >
-            <div className="flex items-center justify-between px-6 pt-6 pb-4 border-b border-[#2A3432]">
+            <div className="flex items-center justify-between px-6 pt-6 pb-4 border-b-[0.5px] border-[#2A3432]">
               <h2 className="text-white font-bold text-lg">Share this playlist</h2>
               <button onClick={closeShareModal} className="text-white/40 hover:text-white transition-colors">
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -357,12 +357,12 @@ export function SharedPlaylistPage() {
                   value={shareText}
                   onChange={(e) => setShareText(e.target.value)}
                   rows={2}
-                  className="w-full bg-white/5 border border-[#2A3432] rounded-lg px-4 py-3 text-white/80 text-sm leading-relaxed focus:outline-none focus:border-[#4feec5]/50 transition-all resize-none"
+                  className="w-full bg-white/5 border-[0.5px] border-[#2A3432] rounded-lg px-4 py-3 text-white/80 text-sm leading-relaxed focus:outline-none focus:border-[#4feec5]/50 transition-all resize-none"
                 />
               </div>
               <div>
                 <label className="block text-white/40 text-xs mb-2">🔗 Playlist link</label>
-                <div className="flex items-center gap-2 px-4 py-3 rounded-lg bg-white/5 border border-[#2A3432]">
+                <div className="flex items-center gap-2 px-4 py-3 rounded-lg bg-white/5 border-[0.5px] border-[#2A3432]">
                   <span className="flex-1 text-white/40 text-xs truncate select-all">{shareUrl}</span>
                   <button
                     onClick={handleCopyLink}
@@ -387,7 +387,7 @@ export function SharedPlaylistPage() {
                     href={platforms[key as keyof typeof platforms]}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex flex-col items-center gap-1.5 px-2 py-3 rounded-xl bg-white/5 hover:bg-white/10 text-white transition-all border border-[#2A3432] hover:border-[#2A3432]"
+                    className="flex flex-col items-center gap-1.5 px-2 py-3 rounded-xl bg-white/5 hover:bg-white/10 text-white transition-all border-[0.5px] border-[#2A3432] hover:border-[#2A3432]"
                   >
                     {icon}
                     <span className="text-[10px] text-white/50">{label}</span>
@@ -396,7 +396,7 @@ export function SharedPlaylistPage() {
               </div>
               <button
                 onClick={handleCopyLink}
-                className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-[#2A3432] hover:border-[#2A3432] text-white/80 text-sm font-medium transition-all"
+                className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-white/5 hover:bg-white/10 border-[0.5px] border-[#2A3432] hover:border-[#2A3432] text-white/80 text-sm font-medium transition-all"
               >
                 {copyLinkText === "✓ Link Copied!" ? <Check className="w-4 h-4 text-[#4feec5]" /> : <Copy className="w-4 h-4" />}
                 <span className={copyLinkText === "✓ Link Copied!" ? "text-[#4feec5]" : ""}>{copyLinkText}</span>
@@ -418,7 +418,7 @@ export function SharedPlaylistPage() {
           transition: "all 200ms ease",
         }}
       >
-        <div className="flex items-center gap-2 px-4 py-2.5 bg-[#1a1b20] border border-[#2A3432] rounded-xl shadow-xl text-white text-sm font-medium whitespace-nowrap">
+        <div className="flex items-center gap-2 px-4 py-2.5 bg-[#1a1b20] border-[0.5px] border-[#2A3432] rounded-xl shadow-xl text-white text-sm font-medium whitespace-nowrap">
           <Check className="w-4 h-4 text-[#4feec5]" />
           ✓ Link copied to clipboard
         </div>
