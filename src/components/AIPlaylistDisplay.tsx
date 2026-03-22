@@ -901,7 +901,7 @@ export function AIPlaylistDisplay({
               </button>
             </div>
             <div className="px-6 py-5 space-y-5 overflow-y-auto">
-              <div className="flex items-center gap-3 bg-[#4feec5]/10 border border-[#4feec5]/20 rounded-xl px-4 py-3">
+              <div className="flex items-center gap-3 bg-[#4feec5]/10 border-[0.5px] border-[#2A3432] rounded-xl px-4 py-3">
                 <div className="w-8 h-8 rounded-full bg-[#4feec5]/20 flex items-center justify-center flex-shrink-0">
                   <Check className="w-4 h-4 text-[#4feec5]" />
                 </div>
