@@ -235,7 +235,7 @@ export function Hero({ onGeneratePlaylist }: HeroProps) {
 
         {/* Input Field */}
         <div className="mt-8 w-full max-w-[704px]">
-          <div className="bg-[#15171a] rounded-[20px] border border-[rgba(42,52,50,0.2)] cursor-text px-[12px] py-[20px]" onClick={handleInputAreaClick}>
+          <div className="bg-[#15171a] rounded-[20px] cursor-text px-[12px] py-[20px]" style={{ border: '0.5px solid #2A3432' }} onClick={handleInputAreaClick}>
             <div className="relative mb-3">
               {!inputValue && (
                 <p className="text-[#b4b4b4] absolute top-0 left-0 pointer-events-none text-[14px]">
