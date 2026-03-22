@@ -224,7 +224,7 @@ export function Hero({ onGeneratePlaylist }: HeroProps) {
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col items-center justify-center px-5 pt-24 md:pt-32 pb-20 bg-[#0a0b0d00]">
         <div className="max-w-4xl mx-auto text-center space-y-8">
-          <h1 className="text-[#f0f1f2] text-[36px] md:text-[56px] leading-[1.2] tracking-[-0.56px] h-[135px] md:h-[134px]">
+          <h1 className="text-[#f0f1f2] text-[36px] md:text-[56px] leading-[1.2] tracking-[-0.56px] h-[135px] md:h-[134px] font-semibold">
             {displayedText}
             <span className="animate-pulse">|</span>
           </h1>
